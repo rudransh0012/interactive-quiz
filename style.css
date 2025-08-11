@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffe60072;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.quiz-container {
+    background-color: rgba(0, 255, 251, 0.605);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.timer {
+    color: #e74c3c;
+}
+
+#quiz {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.answers {
+    margin-bottom: 25px;
+}
+
+.answer {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer:hover {
+    background-color: #d6eaf8;
+}
+
+.answer.selected {
+    background-color: #3498db;
+    color: white;
+}
+
+.answer input {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+#results.good {
+    background-color: #d5f5e3;
+    color: #27ae60;
+    display: block;
+}
+
+#results.average {
+    background-color: #fcf3cf;
+    color: #f39c12;
+    display: block;
+}
+
+#results.bad {
+    background-color: #fadbd8;
+    color: #e74c3c;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.explanation {
+    margin-top: 10px;
+    font-style: italic;
+    color: #7f8c8d;
+    display: none;
+}
+
+.explanation.show {
+    display: block;
+}
